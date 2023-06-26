@@ -8,8 +8,8 @@ export default {
     extend: {
       fontFamily: {
         cute: ['YouthTouchRegular', 'sans-serif'],
-        mono: ['FiraCode', 'monospace'],
-        serif: ['Merriweather', 'serif']
+        lato: ['LatoLight', 'sans-serif'],
+        'lato-bold': ['LatoBold', 'sans-serif']
       }
     }
   },
