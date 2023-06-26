@@ -1,5 +1,5 @@
-function HighlightText ({ children, customClass }) {
-  return <span className={`text-neutral-700 text-5xl font-cute font-bold ${customClass}`}>{children}</span>
+function HighlightText ({ children, customClass = '' }) {
+  return <h2 className={`text-5xl font-cute font-bold ${customClass}`}>{children}</h2>
 }
 
 export default HighlightText
