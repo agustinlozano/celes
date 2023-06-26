@@ -7,6 +7,14 @@
     font-family: 'YouthTouchRegular';
     src: url('./assets/fonts/YouthTouchRegular.ttf'); 
   }
+  @font-face {
+    font-family: 'LatoLight';
+    src: url('./assets/fonts/Lato-Light.ttf'); 
+  }
+  @font-face {
+    font-family: 'LatoBold';
+    src: url('./assets/fonts/Lato-Bold.ttf'); 
+  }
 }
 
 
@@ -15,10 +23,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #212529;
-  background-color: #f8f9fa;
 
-  max-width: 750px;
+  max-width: 600px;
   margin: auto;
 
   font-synthesis: none;
@@ -30,12 +36,14 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 
+#root, body {
+  padding: 0;
+}
+
 body {
-  margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -49,13 +57,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
