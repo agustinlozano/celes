@@ -21,12 +21,12 @@ function FamilySection () {
       <div id='family-container' className='mt-3 flex flex-col gap-7'>
         <Memeber
           name='Niñito'
-          img='/src/assets/photos/ninito.jpg'
+          img='/assets/photos/ninito.JPG'
           description='Our furball of mischief and cuddles.'
         />
         <Memeber
           name='Yop'
-          img='/src/assets/photos/me.JPG'
+          img='/assets/photos/me.JPG'
           description='The mastermind behind this web tribute. A dumb, freaky, and grumpy dude.'
         />
       </div>

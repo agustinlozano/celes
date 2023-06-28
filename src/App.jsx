@@ -27,8 +27,8 @@ function App () {
     const prefersNoPreference = window.matchMedia('(prefers-color-scheme: no-preference)')
 
     if (prefersDarkMode.matches) {
-      document.documentElement.style.setProperty('color', THEME.DARK.color)
-      document.documentElement.style.setProperty('background-color', THEME.DARK.backgroundColor)
+      document.documentElement.style.setProperty('color', THEME.LIGHT.color)
+      document.documentElement.style.setProperty('background-color', THEME.LIGHT.backgroundColor)
     } else if (prefersLightMode.matches) {
       document.documentElement.style.setProperty('color', THEME.LIGHT.color)
       document.documentElement.style.setProperty('background-color', THEME.LIGHT.backgroundColor)

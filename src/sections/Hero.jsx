@@ -37,7 +37,7 @@ function HeroMessage () {
           <br />
           <RegularText>{HERO_MESSAGE.messages.fourth}</RegularText>
           <div className='mt-14'>
-            <img src='/src/assets/img/flag.png' alt='United States flag' className='w-1/2 mx-auto' />
+            <img src='/assets/img/flag.png' alt='United States flag' className='w-1/2 mx-auto' />
             <HighlightText
               customClass='block mt-5'
             >
