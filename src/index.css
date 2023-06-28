@@ -5,15 +5,15 @@
 @layer base {
   @font-face {
     font-family: 'YouthTouchRegular';
-    src: url('./assets/fonts/YouthTouchRegular.ttf'); 
+    src: url('/assets/fonts/YouthTouchRegular.ttf'); 
   }
   @font-face {
     font-family: 'LatoLight';
-    src: url('./assets/fonts/Lato-Light.ttf'); 
+    src: url('/assets/fonts/Lato-Light.ttf'); 
   }
   @font-face {
     font-family: 'LatoBold';
-    src: url('./assets/fonts/Lato-Bold.ttf'); 
+    src: url('/assets/fonts/Lato-Bold.ttf'); 
   }
 }
 
