@@ -1,10 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Family from './sections/Family'
 import HeroMessage from './sections/Hero.jsx'
 import GoUp from './components/atoms/GoUp'
 import Travels from './sections/Travels'
 import './App.css'
+import Loading from './components/atoms/spinner/Loading'
 
 const THEME = {
   LIGHT: {
@@ -18,6 +19,7 @@ const THEME = {
 }
 
 function App () {
+  const [ready, setReady] = useState(false)
   const { scrollYProgress } = useScroll()
   // create an effect to set the prefers-color-scheme media query
   // to light or dark mode depending on the user's preference
@@ -38,13 +40,25 @@ function App () {
     }
   }, [])
 
+  useEffect(() => {
+    setTimeout(() => {
+      setReady(true)
+    }, 1500)
+  }, [])
+
   return (
     <>
-      <motion.div className='progress-bar' style={{ scaleX: scrollYProgress, zIndex: 1000 }} />
-      <HeroMessage />
-      <Family />
-      <Travels />
-      <GoUp />
+      {ready
+        ? (
+          <>
+            <motion.div className='progress-bar' style={{ scaleX: scrollYProgress, zIndex: 1000 }} />
+            <HeroMessage />
+            <Family />
+            <Travels />
+            <GoUp />
+          </>
+          )
+        : <Loading />}
     </>
   )
 }
