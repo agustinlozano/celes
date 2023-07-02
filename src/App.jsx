@@ -8,6 +8,7 @@ import Moments from './sections/Moments'
 import GoUp from './components/atoms/GoUp'
 import './App.css'
 import Comment from './components/Comment'
+import Songs from './sections/Songs'
 
 const THEME = {
   LIGHT: {
@@ -20,7 +21,9 @@ const THEME = {
   }
 }
 
-const APOLOGIZE = 'This website sucks, I\'m sorry about that but my time wasn\'t enough to make a decent work :('
+const APOLOGIZE = 'This website sucks. I didn\'t have enough time to do a decent job :('
+const SAD = 'That hug that night totally wrecked me.'
+const SHINE = 'Shine on you crazy diamond'
 
 function App () {
   const [ready, setReady] = useState(false)
@@ -57,9 +60,12 @@ function App () {
           <>
             <motion.div className='progress-bar' style={{ scaleX: scrollYProgress, zIndex: 1000 }} />
             <HeroMessage />
-            <Comment icon='❗' message={APOLOGIZE} id='apologize-bad-website' />
+            <Comment icon='❗' message={APOLOGIZE} id='apologize-bad-website' variant='roll' />
             <Moments />
             <Travels />
+            <Comment icon='💔' message={SAD} id='apologize-bad-website' />
+            <Songs />
+            <Comment icon='💎' message={SHINE} id='apologize-bad-website' />
             <Family />
             <GoUp />
           </>
