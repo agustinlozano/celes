@@ -15,8 +15,6 @@ const useSectionVisibility = (sectionId) => {
 
       if (windowBottom >= sectionTop && window.scrollY <= sectionBottom) {
         setIsSectionVisible(true)
-      } else {
-        setIsSectionVisible(false)
       }
     }
 
