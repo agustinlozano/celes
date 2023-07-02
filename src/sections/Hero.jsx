@@ -23,15 +23,21 @@ function HeroMessage () {
     <div
       id='hero' className='flex flex-col justify-center min-h-screen mb-20'
     >
-      <h1 className='text-7xl font-cute'>Cele's letter</h1>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <h1 className='text-7xl font-cute'>Cele's letter</h1>
+      </motion.div>
       <header id='my-message-section' className='mx-auto px-1'>
-        <h2 className='text-4xl font-cute'>{HERO_MESSAGE.title}</h2>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 0.5 }}
+          transition={{ duration: 1, delay: 0.5 }}
           className='mx-6'
         >
+          <h2 className='text-4xl font-cute'>{HERO_MESSAGE.title}</h2>
           <RegularText className='mb-2'>{HERO_MESSAGE.messages.first}</RegularText>
           <RegularText className='mb-2'>{HERO_MESSAGE.messages.second}</RegularText>
           <RegularText className='mb-2'>{HERO_MESSAGE.messages.third}</RegularText>

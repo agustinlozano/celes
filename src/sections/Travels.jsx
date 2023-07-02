@@ -36,7 +36,7 @@ function Travels () {
   }
 
   return (
-    <div id='travels' className='flex flex-col justify-center min-h-screen mb-20 mx-2'>
+    <div id='travels' className='flex flex-col justify-center min-h-screen mb-20 mx-6'>
       <HighlightText>{MAIN.title}</HighlightText>
       <RegularText>{MAIN.message}</RegularText>
       <div id='my-travels-section' className='mx-auto px-1 my-5'>
@@ -54,7 +54,7 @@ function Travels () {
                       <RegularText>{place.description}</RegularText>
                       <div className='flex flex-row gap-1 justify-center items-center my-5'>
                         {place.featuredIn?.map((featured) => (
-                          <p key={featured} className='text-xs font-lato py-1 px-4 border hover:border-stone-400 hover:bg-stone-200 hover:text-stone-800'>{featured}</p>
+                          <p key={featured} className='text-xs font-lato py-1 px-4 border hover:border-blue-950 hover:bg-blue-950 hover:text-slate-100'>{featured}</p>
                         ))}
                       </div>
                     </div>

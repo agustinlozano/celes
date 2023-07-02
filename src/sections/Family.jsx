@@ -4,7 +4,7 @@ import RegularText from '../components/RegularText'
 function Memeber ({ name, img, description }) {
   return (
     <div className='mx-6 shadow-sm'>
-      <div className='border-l-4 border-b-2 border-r border-l-gray-600 rounded-tl-md pb-1'>
+      <div className='border-l-4 border-b-2 border-r border-l-blue-950 rounded-tl-md pb-1'>
         <img src={img} alt={name} className='rounded-sm' />
         <h3 className='text-2xl font-lato-bold mt-1'>{name}</h3>
         <RegularText className='px-1'>{description}</RegularText>
