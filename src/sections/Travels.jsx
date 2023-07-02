@@ -4,22 +4,9 @@ import RegularText from '../components/RegularText.jsx'
 import Image from '../components/atoms/Image.jsx'
 import useSectionVisibility from '../hooks/useSectionVisibility.jsx'
 import Loading from '../components/atoms/spinner/Loading.jsx'
+import LoadMore from '../components/atoms/LoadMore.jsx'
 
 import { PLACES, MAIN } from '../content/travels.content.js'
-
-function LoadMore ({ onClick, hide }) {
-  if (hide) {
-    return null
-  }
-
-  return (
-    <div className='flex flex-row justify-center items-center my-5 mx-auto'>
-      <button className='bg-slate-800 hover:bg-slate-600 text-stone-100 font-bold py-2 px-4 rounded' onClick={onClick}>
-        Load more
-      </button>
-    </div>
-  )
-}
 
 function Travels () {
   const [photos, setPhotos] = useState([])

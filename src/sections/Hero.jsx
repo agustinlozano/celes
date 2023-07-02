@@ -21,7 +21,7 @@ function ThreeDots () {
 function HeroMessage () {
   return (
     <div
-      id='hero' className='flex flex-col justify-center min-h-screen mb-20'
+      id='hero' className='flex flex-col justify-center min-h-screen'
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
