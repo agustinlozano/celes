@@ -47,7 +47,7 @@ function Moments () {
                 return (
                   <div key={place.id} className='flex flex-col justify-start items-center border border-l-4 border-b-2 border-r border-l-blue-950 rounded-tl-md'>
                     <Image src={place.src} description={place.alt} />
-                    <div className='my-2'>
+                    <div className='my-2 px-1'>
                       <RegularText>{place.description}</RegularText>
                     </div>
                   </div>

@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Family from './sections/Family'
 import HeroMessage from './sections/Hero.jsx'
-import GoUp from './components/atoms/GoUp'
 import Travels from './sections/Travels'
-import './App.css'
 import Loading from './components/atoms/spinner/Loading'
+import Moments from './sections/Moments'
+import GoUp from './components/atoms/GoUp'
+import './App.css'
+import Comment from './components/Comment'
 
 const THEME = {
   LIGHT: {
@@ -17,6 +19,8 @@ const THEME = {
     backgroundColor: '#000000'
   }
 }
+
+const APOLOGIZE = 'This website sucks, I\'m sorry about that but my time wasn\'t enough to make a decent work :('
 
 function App () {
   const [ready, setReady] = useState(false)
@@ -53,8 +57,10 @@ function App () {
           <>
             <motion.div className='progress-bar' style={{ scaleX: scrollYProgress, zIndex: 1000 }} />
             <HeroMessage />
-            <Family />
+            <Comment icon='❗' message={APOLOGIZE} id='apologize-bad-website' />
+            <Moments />
             <Travels />
+            <Family />
             <GoUp />
           </>
           )
