@@ -4,5 +4,4 @@ function Image ({ src, description }) {
   )
 }
 
-// export the component to use lazily in the parent component
 export default Image
