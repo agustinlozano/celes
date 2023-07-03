@@ -33,9 +33,7 @@ function Travels () {
               {photos && photos.map((place) => {
                 return (
                   <div key={place.id} className='flex flex-col justify-start items-center border rounded-sm'>
-
                     <Image src={place.src} description={place.description} />
-
                     <div className='flex flex-col justify-center items-center px-2'>
                       <h2 className='text-4xl font-cute mt-2'>{place.place}</h2>
                       <RegularText>{place.description}</RegularText>

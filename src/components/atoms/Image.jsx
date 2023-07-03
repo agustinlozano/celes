@@ -1,6 +1,6 @@
 function Image ({ src, description }) {
   return (
-    <img src={src} alt={description} className='w-full rounded-sm' />
+    <img src={src} alt={description} className='w-full h-full rounded-sm' />
   )
 }
 

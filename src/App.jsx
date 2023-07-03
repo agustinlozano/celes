@@ -24,6 +24,7 @@ const THEME = {
 const APOLOGIZE = 'This website sucks. I didn\'t have enough time to do a decent job :('
 const SAD = 'That hug that night totally wrecked me.'
 const SHINE = 'Shine on you crazy diamond'
+const WISH = 'I wish you were here'
 
 function App () {
   const [ready, setReady] = useState(false)
@@ -62,10 +63,11 @@ function App () {
             <HeroMessage />
             <Comment icon='❗' message={APOLOGIZE} id='apologize-bad-website' variant='roll' />
             <Moments />
+            <Comment icon='🌠' message={WISH} />
             <Travels />
-            <Comment icon='💔' message={SAD} id='apologize-bad-website' />
+            <Comment icon='💔' message={SAD} />
             <Songs />
-            <Comment icon='💎' message={SHINE} id='apologize-bad-website' />
+            <Comment icon='💎' message={SHINE} />
             <Family />
             <GoUp />
           </>
